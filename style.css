@@ -572,7 +572,19 @@ margin-bottom: 1rem;
 .customers h2{
     font-size: 1.2rem;
 }
+  
+  #menu-icon {
+    display: block; /* Show menu icon for smaller screens */
+  }
+  .navbar {
+    display: none; /* Hide navbar by default */
+    flex-direction: column; /* Stack navbar items vertically */
+  }
+  .navbar.active {
+    display: flex; /* Show navbar when menu is active */
+  }
 }
+
 @media (max-width: 642px) {
     .container img{
         right: 0;
